@@ -409,7 +409,7 @@ const PORT = process.env.PORT || 3002;
 httpServer.listen(PORT, () => {
   logger.info(`🚀 Raft Consensus Server running on port ${PORT}`);
   logger.info(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
-  logger.info(`🔗 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:3000'}`);
+  logger.info(`🔗 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:3001'}`);
   logger.info(`💾 Database: In-memory storage (MongoDB disabled)`);
   logger.info(`🌐 Running in WebContainer - using in-memory storage`);
 });
