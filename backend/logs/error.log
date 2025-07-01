@@ -1,0 +1,110 @@
+{"cause":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"localhost:27017":{"$clusterTime":null,"address":"localhost:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":10353,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":null,"stale":false,"type":"Unknown"},"errorLabelSet":{},"level":"error","message":"❌ MongoDB connection error: connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"localhost:27017":{"$clusterTime":null,"address":"localhost:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":10353,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":null,"stale":false,"type":"Unknown"},"service":"raft-simulator","stack":"MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at new MongooseServerSelectionError (/home/project/backend/node_modules/mongoose/lib/error/serverSelection.js:26:1)\n    at _handleConnectionErrors (/home/project/backend/node_modules/mongoose/lib/connection.js:1165:11)\n    at NativeConnection.openUri (/home/project/backend/node_modules/mongoose/lib/connection.js:1096:11)\n    at async connectDB (file:///home/project/backend/src/server.ts:12:1895)\n    at async startServer (file:///home/project/backend/src/server.ts:12:4257)","timestamp":"2025-06-30T17:17:19.095Z"}
+{"level":"error","message":"💡 MongoDB connection refused. Please ensure:","service":"raft-simulator","timestamp":"2025-06-30T17:17:19.096Z"}
+{"level":"error","message":"   1. MongoDB is running locally (run `mongod` command)","service":"raft-simulator","timestamp":"2025-06-30T17:17:19.097Z"}
+{"level":"error","message":"   2. Or update MONGODB_URI in .env to use MongoDB Atlas","service":"raft-simulator","timestamp":"2025-06-30T17:17:19.097Z"}
+{"level":"error","message":"   3. Or check if MongoDB is running on a different port","service":"raft-simulator","timestamp":"2025-06-30T17:17:19.098Z"}
+{"level":"error","message":"🔧 To fix this issue:","service":"raft-simulator","timestamp":"2025-06-30T17:17:19.098Z"}
+{"level":"error","message":"   - For local development: Start MongoDB with `mongod`","service":"raft-simulator","timestamp":"2025-06-30T17:17:19.104Z"}
+{"level":"error","message":"   - For cloud: Update MONGODB_URI in backend/.env file","service":"raft-simulator","timestamp":"2025-06-30T17:17:19.104Z"}
+{"level":"error","message":"   - Check the README.md for detailed setup instructions","service":"raft-simulator","timestamp":"2025-06-30T17:17:19.105Z"}
+{"cause":{"beforeHandshake":false,"errorLabelSet":{}},"errorLabelSet":{},"level":"error","message":"❌ MongoDB connection error: connect ECONNREFUSED 127.0.0.1:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"localhost:27017":{"$clusterTime":null,"address":"localhost:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":10353,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":null,"stale":false,"type":"Unknown"},"service":"raft-simulator","stack":"MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at new MongoError (/home/project/backend/node_modules/mongodb/lib/error.js:120:9)\n    at new MongoSystemError (/home/project/backend/node_modules/mongodb/lib/error.js:1160:13)\n    at new MongoServerSelectionError (/home/project/backend/node_modules/mongodb/lib/error.js:1195:9)\n    at Topology.selectServer (/home/project/backend/node_modules/mongodb/lib/sdam/topology.js:326:38)\n    at async Topology._connect (/home/project/backend/node_modules/mongodb/lib/sdam/topology.js:200:28)\n    at async Topology.connect (/home/project/backend/node_modules/mongodb/lib/sdam/topology.js:152:13)\n    at async topologyConnect (/home/project/backend/node_modules/mongodb/lib/mongo_client.js:246:17)\n    at async MongoClient._connect (/home/project/backend/node_modules/mongodb/lib/mongo_client.js:259:13)\n    at async MongoClient.connect (/home/project/backend/node_modules/mongodb/lib/mongo_client.js:184:13)\n    at async NativeConnection.createClient (/home/project/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:351:3)","timestamp":"2025-06-30T17:17:19.110Z"}
+{"errorLabelSet":{},"level":"error","message":"❌ MongoDB connection error: option buffermaxentries is not supported","service":"raft-simulator","stack":"MongoParseError: option buffermaxentries is not supported\n    at new MongoError (/home/project/backend/node_modules/mongodb/lib/error.js:120:9)\n    at new MongoDriverError (/home/project/backend/node_modules/mongodb/lib/error.js:217:9)\n    at new MongoParseError (/home/project/backend/node_modules/mongodb/lib/error.js:1023:9)\n    at parseOptions (/home/project/backend/node_modules/mongodb/lib/connection_string.js:278:15)\n    at new MongoClient (/home/project/backend/node_modules/mongodb/lib/mongo_client.js:65:61)\n    at NativeConnection.createClient (/home/project/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)\n    at NativeConnection.openUri (/home/project/backend/node_modules/mongoose/lib/connection.js:1071:34)\n    at Mongoose.connect (/home/project/backend/node_modules/mongoose/lib/mongoose.js:450:15)\n    at connectDB (file:///home/project/backend/src/server.ts:12:1996)\n    at startServer (file:///home/project/backend/src/server.ts:12:4452)","timestamp":"2025-06-30T17:19:02.125Z"}
+{"level":"error","message":"🔧 To fix this issue in WebContainer:","service":"raft-simulator","timestamp":"2025-06-30T17:19:02.127Z"}
+{"level":"error","message":"   - Update MONGODB_URI in backend/.env to use MongoDB Atlas","service":"raft-simulator","timestamp":"2025-06-30T17:19:02.128Z"}
+{"level":"error","message":"   - Ensure the Atlas cluster allows connections from anywhere (0.0.0.0/0)","service":"raft-simulator","timestamp":"2025-06-30T17:19:02.129Z"}
+{"level":"error","message":"   - Verify the database credentials are correct","service":"raft-simulator","timestamp":"2025-06-30T17:19:02.133Z"}
+{"errorLabelSet":{},"level":"error","message":"❌ MongoDB connection error: option buffermaxentries is not supported","service":"raft-simulator","stack":"MongoParseError: option buffermaxentries is not supported\n    at new MongoError (/home/project/backend/node_modules/mongodb/lib/error.js:120:9)\n    at new MongoDriverError (/home/project/backend/node_modules/mongodb/lib/error.js:217:9)\n    at new MongoParseError (/home/project/backend/node_modules/mongodb/lib/error.js:1023:9)\n    at parseOptions (/home/project/backend/node_modules/mongodb/lib/connection_string.js:278:15)\n    at new MongoClient (/home/project/backend/node_modules/mongodb/lib/mongo_client.js:65:61)\n    at NativeConnection.createClient (/home/project/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)\n    at NativeConnection.openUri (/home/project/backend/node_modules/mongoose/lib/connection.js:1071:34)\n    at Mongoose.connect (/home/project/backend/node_modules/mongoose/lib/mongoose.js:450:15)\n    at connectDB (file:///home/project/backend/src/server.ts:12:1996)\n    at startServer (file:///home/project/backend/src/server.ts:12:4452)","timestamp":"2025-06-30T17:19:02.147Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:03.679Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:05.179Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:06.690Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:07.180Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:08.199Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:09.700Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:11.210Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:12.179Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:12.718Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:14.236Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:15.730Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:17.189Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:17.229Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:18.731Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:20.230Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:21.731Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:22.200Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:23.230Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:24.740Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:26.240Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:27.200Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:27.760Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:29.431Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:30.889Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:32.201Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:32.400Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:33.910Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:35.411Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:36.920Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:37.210Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:38.430Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:40.217Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:41.440Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:42.221Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:42.951Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:44.461Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:45.962Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:47.221Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:47.470Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:49.089Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:50.490Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:51.990Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:52.229Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:53.490Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:55.000Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:56.500Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:57.255Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:58.000Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:19:59.510Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:01.061Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:02.231Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:02.560Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:04.081Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:05.580Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:07.079Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:07.253Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:08.600Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:10.091Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:11.615Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:12.269Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:13.110Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:14.620Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:16.122Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:17.260Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:17.630Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:19.140Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:20.653Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:22.161Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:22.401Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:23.670Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:25.179Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:26.690Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:27.360Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:28.201Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:29.714Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:31.210Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:32.370Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:32.721Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:34.229Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:35.730Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:37.241Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:37.381Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:38.770Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:40.270Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:41.770Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:42.431Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:43.281Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:44.779Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:46.290Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:47.486Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:47.802Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:49.300Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:50.811Z"}
+{"level":"error","message":"Unhandled Rejection at:","service":"raft-simulator","timestamp":"2025-06-30T17:20:52.330Z"}
