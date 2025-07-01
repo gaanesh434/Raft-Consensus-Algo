@@ -35,7 +35,7 @@ A comprehensive, interactive visualization of the Raft consensus algorithm with 
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/gaanesh434/Raft-Consensus-Algo.git
 cd raft-consensus-simulator
 
 # Install dependencies
@@ -267,7 +267,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🐛 **Issues:** [GitHub Issues](https://github.com/yourusername/raft-simulator/issues)
 - 💬 **Discussions:** [GitHub Discussions](https://github.com/yourusername/raft-simulator/discussions)
-- 📧 **Email:** your.email@example.com
+- 📧 **Email:** kkleealganesh@gmail.com
 
 ---
 
