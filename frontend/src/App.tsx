@@ -99,7 +99,7 @@ function App() {
           throw new Error('socket.io-client module is invalid');
         }
 
-        const newSocket = io.default('http://localhost:3001', {
+        const newSocket = io.default('http://localhost:3002', {
           transports: ['websocket', 'polling'],
           timeout: 10000,
           reconnection: true,
