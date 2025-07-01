@@ -275,7 +275,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Quick Links
 
-- **Live Demo:** [Coming Soon]
+
 - **Documentation:** [GitHub Wiki](https://github.com/yourusername/raft-simulator/wiki)
 - **Tutorial Videos:** [Coming Soon]
-- **Blog Post:** [Coming Soon]
+  
